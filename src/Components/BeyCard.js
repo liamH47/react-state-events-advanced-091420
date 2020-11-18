@@ -8,7 +8,9 @@ class BeyCard extends Component {
   }
 
   removeFav = () => {
-    this.props.antiHandler(this.props.beyObj) 
+    if (this.props.antiHandler){
+      this.props.antiHandler(this.props.beyObj) 
+    }
   }
  
   render() {

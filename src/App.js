@@ -3,8 +3,7 @@ import BeyContainer from './Containers/BeyContainer'
 import Favorites from './Containers/Favorites'
 import beyArray from './api'
 import "./App.css";
-import Favorites from './Containers/Favorites'
-import BeyContainer from './Containers/BeyContainer'
+
 
 class App extends Component {
   state = {beyArray}
@@ -16,6 +15,7 @@ class App extends Component {
       beyArray: newArr
     })
   }
+  
   antiHandler = (beyObj) => {
     let newArr = [...this.state.beyArray]
     newArr[newArr.indexOf(beyObj)].favorite = false
