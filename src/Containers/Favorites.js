@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import BeyCard from "../Components/BeyCard";
 
 
+
 export default class Favorites extends Component {
 
   beyMap = () => {
